@@ -8,7 +8,7 @@ app.use(bodyParser.json());
 
 app.post('/print', async (req, res) => {
   try {
-    const response = await axios.post('http://100.X.X.X:3000/print', req.body); // ← Sustituye 100.X.X.X por la IP de Tailscale de tu tablet
+    const response = await axios.post('http://100.100.92.9:3000/print', req.body); // ← Sustituye 100.X.X.X por la IP de Tailscale de tu tablet
     res.send(response.data);
   } catch (error) {
     console.error(error.message);
